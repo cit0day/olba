@@ -1,0 +1,42 @@
+/* Animations */
+@keyframes BlinkingPrimaryShadow {
+    0% {
+        text-shadow: 0 0 12px var(--color-primary);
+    }
+
+    50% {
+        text-shadow: 0 0 0px var(--color-primary);
+    }
+
+    100% {
+        text-shadow: 0 0 12px var(--color-primary);
+    }
+}
+
+@keyframes BlinkingWhiteShadow {
+    0% {
+        text-shadow: 0 0 12px var(--color-text-light);
+    }
+
+    50% {
+        text-shadow: 0 0 0px var(--color-text-light);
+    }
+
+    100% {
+        text-shadow: 0 0 12px var(--color-text-light);
+    }
+}
+
+@keyframes FloatingImage {
+    0% {
+        transform: translateY(-1.25rem);
+    }
+
+    50% {
+        transform: translateY(1.25rem);
+    }
+
+    100% {
+        transform: translateY(-1.25rem);
+    }
+}

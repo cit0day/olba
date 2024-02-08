@@ -1,0 +1,214 @@
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 1.2rem 1.8rem;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    transition: 0.3s ease;
+    font-family: var(--font-family-1);
+    font-weight: var(--font-weight-bold);
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/* Header button Starting*/
+.btn-header {
+    background-color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    color: var(--color-background);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-header:hover {
+    background-color: var(--color-secondary);
+    border: 2px solid var(--color-secondary);
+}
+
+.btn-header:hover,
+.btn-header:hover .header-cart-icon {
+    color: var(--color-background);
+}
+
+/* Hero1 button Starting*/
+.btn-hero1 {
+    background-color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    color: var(--color-dark);
+    width: 19.7rem;
+}
+
+.btn-hero1:hover {
+    background-color: var(--color-secondary);
+    border: 2px solid var(--color-secondary);
+}
+
+.btn-hero1:hover,
+.btn-hero1:hover .cart-icon {
+    color: var(--color-background);
+}
+
+/* Hero2 button Starting*/
+.btn-hero2 {
+    background-color: transparent;
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+    width: 19.7rem;
+}
+
+.btn-hero2:hover {
+    background-color: var(--color-primary);
+}
+
+.btn-hero2:hover,
+.btn-hero2:hover .phone-icon {
+    color: var(--color-background);
+}
+
+/* Features button*/
+.btn-features {
+    color: var(--color-text-hover);
+    transition: 0.3s;
+    width: auto;
+}
+
+.btn-features:hover {
+    color: var(--color-text-light);
+}
+
+/* Contact button*/
+.btn-contact {
+    background: var(--color-primary);
+    color: var(--color-dark);
+    transition: 0.3s;
+    padding: 1.2rem 2.2rem;
+    width: 21rem;
+}
+
+.btn-contact:hover {
+    background: var(--color-secondary);
+}
+
+/* Category button Starting*/
+.btn-category {
+    background-color: var(--color-primary);
+    color: var(--color-dark);
+    border-radius: 5px;
+    height: 3.2rem;
+    width: fit-content;
+    max-width: 100%;
+    padding: 1.2rem 1.4rem;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.btn-category:hover {
+    background-color: var(--color-secondary);
+}
+
+.btn-category.active {
+    background-color: var(--color-secondary);
+}
+
+/* Product button Starting*/
+.btn-product {
+    color: var(--color-background);
+    background-color: var(--color-primary);
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-product:hover {
+    background-color: var(--color-secondary);
+}
+
+/* Buy button Starting*/
+.btn-buy {
+    color: var(--color-background);
+    background-color: var(--color-primary);
+    font-size: 1.5rem;
+    width: auto;
+    border-radius: 5px;
+    height: 3.6rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-buy:hover {
+    background-color: var(--color-secondary);
+}
+
+/* Black Bar button and icon Starting*/
+#btn-blackbar {
+    display: none;
+    cursor: pointer;
+}
+
+#btn-blackbar.active #blackbarbutton-icon {
+    transform: rotate(90deg);
+}
+
+#btn-blackbar:hover,
+#btn-blackbar:hover #blackbarbutton-icon {
+    color: var(--color-text-light);
+}
+
+#blackbarbutton-icon {
+    color: var(--color-text-hover);
+    transition: 0.3s ease;
+    font-size: 3rem;
+}
+
+/* Icons Starting */
+.header-cart-icon {
+    font-size: 1.6rem;
+    margin-left: 1rem;
+    margin-bottom: -0.2rem;
+    color: var(--color-background);
+    transition: 0.3s ease;
+}
+
+.explore-icon {
+    font-size: 1.6rem;
+    margin-left: 1rem;
+    color: var(--color-background);
+    transition: 0.3s ease;
+}
+
+.phone-icon {
+    font-size: 1.6rem;
+    margin-left: 1.2rem;
+    color: var(--color-primary);
+    transition: 0.3s ease;
+}
+
+.rightarrow-icon {
+    margin-left: 1.2rem;
+}
+
+.downarrow-icon {
+    font-size: 1.6rem;
+    margin-top: 0.7rem;
+}
+
+.footerheart-icon {
+    font-size: 1.2rem;
+    margin: 0 0.3rem;
+    background: var(--color-linear-2);
+    -webkit-background-clip: text;
+    color: transparent;
+}

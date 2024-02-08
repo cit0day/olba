@@ -1,0 +1,23 @@
+/* CSS Files */
+@import '__reboot.css';
+@import '__grid.css';
+@import '__utilities.css';
+@import '__buttons-icons.css';
+@import '__animations.css';
+@import '__modal.css';
+@import '_header.css';
+@import '_footer.css';
+@import '_main.css';
+@import '_gallery.css';
+@import '_store.css';
+@import '_guides.css';
+@import '_tos.css';
+
+/* Fonts */
+@import url('https://fonts.cdnfonts.com/css/satoshi?styles=135009,135002,135000');
+
+/* Icons */
+@import url('all.css');
+@import url('all.min.css');
+@import url('../js/all.js');
+@import url('../js/all.min.js');

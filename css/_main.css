@@ -1,0 +1,664 @@
+/* 1069px and Upper - Desktop Sections */
+
+/* Hero Section */
+#hero {
+    position: relative;
+    margin-top: -14rem;
+    padding-top: 14rem;
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 100%;
+    z-index: -200;
+    mix-blend-mode: color-dodge;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+}
+
+.hero-background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 20%;
+    z-index: -200;
+    mix-blend-mode: color-dodge;
+    background-image: url("../images/hero-bg.png");
+    background-position: center;
+    background-size: cover;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+}
+
+.hero {
+    padding: 10rem 0;
+    color: var(--color-text-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content h2 {
+    margin-bottom: 1.6rem;
+    max-width: 92rem;
+    font-size: 7.2rem;
+    font-weight: var(--font-weight-black);
+    line-height: 1.2;
+    letter-spacing: 0.4rem;
+    text-align: center;
+    color: var(--color-text-light);
+    animation: BlinkingWhiteShadow 3s ease-in-out infinite;
+}
+
+.hero-content h2 span {
+    background: var(--color-linear-1);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: BlinkingPrimaryShadow 3s ease-in-out infinite;
+}
+
+.hero-content p {
+    max-width: 58rem;
+    font-size: 2.4rem;
+    color: var(--color-text-hover);
+    text-align: center;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-top: 4.4rem;
+}
+
+/* Brands section */
+.brands {
+    width: 100%;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.brands .title {
+    margin-bottom: 7rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    color: var(--color-text-hover);
+    text-align: center;
+}
+
+.brands .content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.brands .content a img {
+    width: 6rem;
+    height: auto;
+    opacity: 50%;
+    mix-blend-mode: luminosity;
+    filter: invert(0);
+    transition: 0.15s ease-in-out;
+}
+
+.brands .content a:hover img {
+    opacity: 100%;
+    mix-blend-mode: normal;
+    filter: none;
+}
+
+/* Features section */
+#features {
+    position: relative;
+}
+
+.features {
+    padding: 10rem 0 10rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.features h3 {
+    margin-bottom: 4rem;
+    font-size: 5rem;
+    font-weight: var(--font-weight-black);
+    line-height: 1.2;
+    letter-spacing: 0.4rem;
+    text-align: center;
+    color: var(--color-text-light);
+    animation: BlinkingWhiteShadow 3s ease-in-out infinite
+}
+
+.features h3 span {
+    background: var(--color-linear-1);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: BlinkingPrimaryShadow 3s ease-in-out infinite;
+}
+
+.features-content {
+    width: 100%;
+    gap: 5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.features-content .card {
+    position: relative;
+    height: auto;
+    min-height: 20rem;
+    width: calc(50% - (2.5rem));
+    padding: 3rem;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-radius: 16px;
+    background: var(--color-text-extra-dark);
+    box-shadow: 0 0 25px rgb(0, 0, 0);
+    z-index: 0;
+    transition: 0.3s ease;
+}
+
+.features-content .card:hover {
+    background-color: var(--color-primary);
+}
+
+.features-content .card h5 {
+    font-size: 2.4rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-secondary);
+}
+
+.features-content .card p {
+    font-size: 2rem;
+    font-weight: var(--font-weight-normal);
+    color: var(--color-text-hover);
+}
+
+.features-content .card a {
+    font-size: 2rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-secondary);
+}
+
+.features-content .card-1::before {
+    position: absolute;
+    bottom: 0rem;
+    left: 2%;
+    height: 100%;
+    width: 90%;
+    opacity: 13%;
+    z-index: -1;
+    content: "";
+    background-image: url("../images/1.svg");
+    background-size: cover;
+    background-position: center;
+}
+
+.features-content .card-2::before {
+    position: absolute;
+    bottom: 0rem;
+    left: 2%;
+    height: 100%;
+    width: 90%;
+    opacity: 13%;
+    z-index: -1;
+    content: "";
+    background-image: url("../images/2.svg");
+    background-size: cover;
+    background-position: center;
+}
+
+.features-content .card-3::before {
+    position: absolute;
+    bottom: 0rem;
+    left: 2%;
+    height: 100%;
+    width: 90%;
+    opacity: 13%;
+    z-index: -1;
+    content: "";
+    background-image: url("../images/3.svg");
+    background-size: cover;
+    background-position: center;
+}
+
+.features-content .card-4::before {
+    position: absolute;
+    bottom: 0rem;
+    left: 2%;
+    height: 100%;
+    width: 90%;
+    opacity: 13%;
+    z-index: -1;
+    content: "";
+    background-image: url("../images/4.svg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* About section */
+#about {
+    position: relative;
+}
+
+.about::before,
+.about::after {
+    background: linear-gradient(to bottom, var(--color-background) 0%, rgba(255, 255, 255, 0) 100%);
+    content: '';
+    height: 44%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.about::before {
+    left: 0;
+    top: 0;
+    margin-top: -1.25rem;
+}
+
+.about::after {
+    left: 0;
+    bottom: 0;
+    margin-bottom: -1.25rem;
+    transform: rotateZ(180deg);
+}
+
+.about-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 30%;
+    z-index: -3;
+    mix-blend-mode: color-dodge;
+    background-image: url("../images/about-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    animation: FloatingImage 4.5s ease-in-out infinite;
+}
+
+.about {
+    padding: 20rem 0;
+    color: var(--color-text-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content {
+    width: 100%;
+    height: auto;
+    gap: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.about-content h3 {
+    font-size: 5rem;
+    font-weight: var(--font-weight-black);
+    line-height: 1.2;
+    letter-spacing: 0.4rem;
+    text-align: left;
+    color: var(--color-text-light);
+    animation: BlinkingWhiteShadow 3s ease-in-out infinite
+}
+
+.about-content h3 span {
+    background: var(--color-linear-1);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: BlinkingPrimaryShadow 3s ease-in-out infinite;
+}
+
+.about-content p {
+    max-width: 60rem;
+    font-size: 2.4rem;
+    color: var(--color-text-dark);
+    text-align: left;
+}
+
+.about-content p span {
+    background: var(--color-linear-1);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Contact Section */
+.contact {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact .card {
+    position: relative;
+    height: 40rem;
+    width: 100%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    border-radius: 16px;
+    box-shadow: 0 0 75px rgb(0, 0, 0);
+}
+
+.contact .card .contact-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 25%;
+    z-index: -1;
+    border-radius: 16px;
+    mix-blend-mode: luminosity;
+    background-image: url("../images/contact-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.contact h3 {
+    font-size: 5rem;
+    font-weight: var(--font-weight-black);
+    line-height: 1.2;
+    letter-spacing: 0.4rem;
+    text-align: center;
+    color: var(--color-text-light);
+    animation: BlinkingWhiteShadow 3s ease-in-out infinite
+}
+
+.contact h3 span {
+    background: var(--color-linear-1);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: BlinkingPrimaryShadow 3s ease-in-out infinite;
+}
+
+.contact p {
+    font-size: 2.4rem;
+    font-weight: var(--font-weight-normal);
+    color: var(--color-text-hover);
+    text-align: center;
+}
+
+
+/*  834px - 1068px - Laptop Sections */
+@media screen and (min-width: 834px) and (max-width: 1068px) {
+    html {
+        font-size: 60%;
+    }
+
+    /* Hero Section */
+    #hero {
+        margin-top: -9rem;
+        padding-top: 9rem;
+    }
+
+    /* Brands section */
+    .brands .content a img {
+        width: 5rem;
+    }
+
+    /* About section */
+    .about {
+        padding: 15rem 0;
+    }
+
+    .about-background {
+        background-position: right;
+    }
+}
+
+
+
+/*  576px - 833px - Tablet Sections */
+@media screen and (min-width: 576px) and (max-width: 833px) {
+    html {
+        font-size: 60%;
+    }
+
+    /* Hero Section */
+    #hero {
+        margin-top: -6rem;
+        padding-top: 6rem;
+    }
+
+    /* Brands section */
+    .brands {
+        padding: 2rem;
+    }
+
+    .brands .title {
+        margin-bottom: 3.5rem;
+    }
+
+    .brands .content {
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 2rem;
+        column-gap: 10rem;
+    }
+
+    .brands .content a img {
+        width: 5rem;
+    }
+
+    /* Features section */
+    .features {
+        padding: 5rem 0 5rem 0;
+    }
+
+    .features-content {
+        gap: 2.5rem;
+        flex-direction: column;
+    }
+
+    .features-content .card {
+        min-height: 10rem;
+        width: 100%;
+        padding: 2rem;
+    }
+
+    /* About section */
+    .about {
+        padding: 10rem 0;
+    }
+
+    .about-background {
+        background-position: right;
+    }
+
+    /* Contact Section */
+    .contact {
+        padding: 5rem 0 5rem 0;
+    }
+
+    .contact .card {
+        height: auto;
+        gap: 4rem;
+    }
+}
+
+
+
+/*  575px and Lower - Mobile Sections */
+@media screen and (max-width: 575px) {
+    html {
+        font-size: 60%;
+    }
+
+    /* Hero Section */
+    .hero-video {
+        border-bottom-right-radius: 32px;
+        border-bottom-left-radius: 32px;
+    }
+
+    .hero-background {
+        border-bottom-right-radius: 32px;
+        border-bottom-left-radius: 32px;
+    }
+
+    #hero {
+        margin-top: -6rem;
+        padding-top: 6rem;
+    }
+
+    .hero {
+        padding: 4rem 0;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero-content h2 {
+        font-size: 3.6rem;
+        margin-bottom: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1.6rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 3rem;
+    }
+
+    .hero-buttons a {
+        width: 100%;
+    }
+
+    /* Brands section */
+    .brands {
+        padding: 2rem;
+    }
+
+    .brands .title {
+        margin-bottom: 3.6rem;
+    }
+
+    .brands .content {
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 2rem;
+        column-gap: 5rem;
+    }
+
+    .brands .content a img {
+        width: 4rem;
+    }
+
+    /* Features section */
+    .features {
+        padding: 5rem 0 5rem 0;
+    }
+
+    .features h3 {
+        font-size: 3.6rem;
+    }
+
+    .features-content {
+        gap: 2.5rem;
+        flex-direction: column;
+    }
+
+    .features-content .card {
+        min-height: 10rem;
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .features-content .card h5 {
+        font-size: 2.4rem;
+    }
+
+    .features-content .card p {
+        font-size: 1.6rem;
+    }
+
+    /* About section */
+    .about {
+        padding: 5rem 0;
+    }
+
+    .about-background {
+        background-position: right;
+    }
+
+    .about-content {
+        gap: 2.5rem;
+    }
+
+    .about-content h3 {
+        font-size: 3.6rem;
+    }
+
+    .about-content p {
+        font-size: 1.6rem;
+    }
+
+    .about-content a {
+        width: 100%;
+    }
+
+    /* Contact Section */
+    .contact {
+        padding: 5rem 0;
+    }
+
+    .contact .card {
+        height: auto;
+        padding: 2rem;
+    }
+
+    .contact h3 {
+        font-size: 3.6rem;
+    }
+
+    .contact p {
+        font-size: 1.6rem;
+    }
+
+    .btn-contact {
+        width: 100%;
+    }
+}

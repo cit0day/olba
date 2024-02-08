@@ -1,0 +1,199 @@
+/* 1069px and Upper - Desktop Header */
+.header {
+    z-index: 99;
+    height: 14rem;
+    width: 100%;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation {
+    z-index: 100;
+    height: 9rem;
+    width: 133rem;
+    border-radius: 24px;
+    padding: 0 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-background);
+    box-shadow: 0 0 75px rgb(0, 0, 0);
+}
+
+.navigation .logo {
+    height: 6rem;
+    width: auto;
+}
+
+.navigation .navbar {
+    display: flex;
+    gap: 4rem;
+    margin-left: 4rem;
+}
+
+.navigation .navbar a {
+    font-size: 1.7rem;
+    color: var(--color-text-dark);
+    font-weight: var(--font-weight-bold);
+    transition: 0.3s ease;
+}
+
+.navigation .navbar a:hover {
+    color: var(--color-text-hover);
+}
+
+.nav-right {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+}
+
+#black-bar {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-dark);
+    display: none;
+}
+
+#nav-blackbar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 5rem 5rem;
+}
+
+#nav-blackbar a {
+    line-height: 2;
+    font-size: 2.4rem;
+    color: var(--color-text-light);
+    font-weight: var(--font-weight-black);
+}
+
+
+/*  834px - 1068px - Laptop Header */
+@media screen and (min-width: 834px) and (max-width: 1068px) {
+
+    .header {
+        position: sticky;
+        top: 0;
+        left: 0;
+        height: 9rem;
+        padding: 0;
+    }
+
+    .navigation {
+        width: 100%;
+        height: 9rem;
+        padding: 0 2rem;
+        border-radius: 0;
+    }
+
+    .navigation .logo {
+        height: 6rem;
+    }
+
+    .nav-right {
+        width: auto;
+    }
+}
+
+
+/*  576px - 833px - Tablet Header */
+@media screen and (min-width: 576px) and (max-width: 833px) {
+
+    #btn-blackbar {
+        z-index: 101;
+        display: block;
+    }
+
+    .header {
+        position: sticky;
+        top: 0;
+        left: 0;
+        height: 6rem;
+        padding: 0;
+    }
+
+    .navigation .navbar {
+        display: none;
+    }
+
+    .navigation {
+        width: 100%;
+        height: 6rem;
+        padding: 0 2rem;
+        border-radius: 0;
+    }
+
+    .navigation .logo {
+        height: 4rem;
+    }
+
+    .navigation .btn-header {
+        padding: 0.8rem 1.2rem;
+        font-size: 1.4rem;
+    }
+
+    .nav-right {
+        width: 18.5rem;
+    }
+}
+
+/*  575px and Lower - Mobile Header */
+@media screen and (max-width: 575px) {
+
+    #btn-blackbar {
+        z-index: 101;
+        display: block;
+    }
+
+    #blackbarbutton-icon {
+        font-size: 2.4rem;
+    }
+
+    #nav-blackbar {
+        padding: 4rem 3rem;
+    }
+    
+    #nav-blackbar a {
+        font-size: 2rem;
+    }
+
+    .header {
+        position: sticky;
+        top: 0;
+        left: 0;
+        height: 6rem;
+        padding: 0;
+    }
+
+    .navigation .navbar {
+        display: none;
+    }
+
+    .navigation {
+        width: 100%;
+        height: 6rem;
+        padding: 0 2rem;
+        border-radius: 0;
+    }
+
+    .navigation .logo {
+        height: 4rem;
+    }
+
+    .navigation .btn-header {
+        display: none;
+    }
+}
